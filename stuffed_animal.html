@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stuffed Bear</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    </head>
+    <style>
+        .btnprimary:hover {
+            color:white !important;
+            background: #333333 !important;
+        }
+        .btnprimary {
+            position:absolute !important;
+            bottom:10px !important;
+            width:100px !important;
+            border:thin !important;
+            border-radius:5% !important;
+            background:goldenrod !important;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
+          .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+          }
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+        @media screen and (max-width: 800px) {
+            .column {
+            flex: 50%;
+            max-width: 50%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+            flex: 100%;
+            max-width: 100%;
+            }
+            
+        }
+    </style>
+    <body style="overflow-x:hidden;">
+        
+        <div class='row'>
+            <div class='column'>
+                <img id="product-img" style="padding:50px;width:675px;" src="bear.jpg"/>
+            </div>
+            <div class='column'>
+                
+            </div>
+            <div style="padding-top:75px;" class='column'>
+                <h1>Stuffed Teddy Bear</h1>
+                <h5 style='font-weight:lighter;'>Brand: <span style="color:blue;">Teddy</span></h5>
+                <p style="color:goldenrod;">&#9733; &#9733; &#9733; &#9733; &#9734;</p>
+                <h6 style="font-weight:lighter;"><span style="color:blue;">52 Ratings</span> | <span style="color:blue;">16 answered questions</span></h6>
+                <hr/>
+                <h5 style="font-weight:lighter;">Price: &euro;19.99</h5>
+                <br/><br/><br/>
+                <h6 style="font-weight:lighter;"><b style="font-weight:bold;">Note: </b>The displayed price does not include shipping or tax.</h6>
+                <hr/>
+                <h4>About This Item</h4>
+                <p style="font-weight:lighter;">
+                    A teddy bear is a stuffed toy in the form of a bear.
+                    Since the creation of the first teddy bears which sought to imitate the form of real bear cubs, "teddies" have greatly varied in form, style, color, and material. Teddy bears are among the most popular gifts for children and are often given to adults to signify love, affection, congratulations, or sympathy.
+                </p>
+            </div>
+            <div class='column'>
+                <div style="position:relative;border-radius:5%;margin-top:50px;width:93%;height:550px;border:.5px solid black;">
+                    <h5 style="padding-top:25px;padding-left:25px;padding-right:25px;font-weight:lighter;">
+                        Price: &euro;19.99
+                    </h5>
+                    <h5 style="color:green;padding-left:25px;padding-right:25px;">
+                        In Stock
+                    </h5>
+                    <br/>
+                    <h6 style="padding-left:25px;padding-right:25px;font-weight:lighter;">
+                        <b>Returns: </b>No returns on this item.
+                        <br/><br/>
+                        <b>Delivery: </b>This item will be shipped within 2-3 days.
+                        <br/><br/>
+                        <b>Tax: </b>This item will be taxed a percentage based on your state.
+                        <br/><br/><br/>
+                        <b>Ships From: </b>Washington DC, 20005
+                    </h6>
+                    <label style="position:absolute;left:50px;bottom:50px;">QTY:</label>
+                    <input value='1' style="width:50%;position:absolute;left:100px;bottom:50px;"/>
+                    <button class="btnprimary" style="left:60%;">Buy Now</button>
+                    <button class="btnprimary" style="left:7%;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
